@@ -12,13 +12,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+<<<<<<< HEAD
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+=======
 ### Instruction:
+>>>>>>> mansour
 
+```
 ....index
 .... ....|_App
 .... ....|_______Navbar =>{Parent Component}
@@ -38,13 +39,14 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 .... ....|
 .... ....|__Footer =>{Component}
 
-  
+  ```
   
 
+<<<<<<< HEAD
+=======
 ### APIs:
 
 1. Plant.id
 
 2. // Need an API that provide a plant name then he will give us some info about it.
-
-
+>>>>>>> mansour
