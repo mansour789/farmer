@@ -26,3 +26,28 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Instruction:
+index
+   |_App
+      |__Navbar =>{Parent Component}
+      |        |__Button =>{Child Component}
+      |        |__Logo
+      |
+      |__Input(Left Side) =>{Parent Component}
+      |         |__introduction =>{Child Component}
+      |         |__Up load image button =>{Child Component}
+      |         |__Loading =>{Child Component}
+      |
+      |__Information(right Side) =>{Parent Component}
+      |         |
+      |         |__Display Image =>{Child Component}
+      |         |
+      |         |__Cards Component =>{Child Component}
+      |
+      |__Footer =>{Component}
+
+
+### APIs:
+1. Plant.id
+2. // Need an API that provide a plant name then he will give us some info about it. 
