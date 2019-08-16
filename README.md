@@ -14,6 +14,7 @@ You will also see any lint errors in the console.
 
 ### Instruction:
 
+```
 ....index
 .... ....|_App
 .... ....|_______Navbar =>{Parent Component}
@@ -31,7 +32,10 @@ You will also see any lint errors in the console.
 .... ....|
 .... ....|
 .... ....|
-.... ....|__Footer =>{Component}  
+.... ....|__Footer =>{Component}
+
+  ```
+  
 
 ### APIs:
 
