@@ -9,10 +9,10 @@ class Navbar extends Component{
       
     <nav>
 
-      <div class="nav-wrapper light-green darken-2 ">
+      <div className="nav-wrapper light-green darken-2 ">
 
-        <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" className="brand-logo">Logo</a>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li> <Link to="/">Home</Link> </li>
             <li> <Link to="/aboutus">About</Link> </li>
             <li> <Link to="/contact">Contact</Link> </li>

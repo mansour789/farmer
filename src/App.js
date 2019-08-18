@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact'; 
 import 'materialize-css/dist/css/materialize.min.css'; 
-import Leftside from './components/Leftside';
 
 
 
@@ -16,7 +15,7 @@ function App() {
 
   <Router> 
 
-    <div>
+   
 
       <Navbar/>
 
@@ -24,9 +23,9 @@ function App() {
       <Route  path="/aboutus" component={AboutUs} /> 
       <Route  path="/contact" component={Contact} /> 
 
-      <Leftside /> 
+      
 
-    </div>
+   
      
 
   </Router>

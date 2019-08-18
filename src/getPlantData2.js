@@ -1,4 +1,4 @@
-const getData =  [
+const getData =  
     {
         "id": 220463,
         "custom_id": null,
@@ -134,7 +134,7 @@ const getData =  [
         "fail_cause": null,
         "source": "mansouralmohsen2018@gmail.com"
     }
-]
+
 
 
 export default getData;

@@ -26,8 +26,8 @@ class Leftside extends Component {
    
     return(
     <div>
-      <div class="row">
-        <div class="col s12 m8 l4"> 
+      <div className="row">
+        <div className="col s12 m8"> 
           <h3> -------- </h3>
           <p className="form_subtitle"> Upload an image to be processed </p>
           <input id="inputFileToLoad" type="file" onChange={this.encodeImageFileAsURL} />
