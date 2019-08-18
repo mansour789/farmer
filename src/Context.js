@@ -1,87 +1,70 @@
 import React, { Component } from "react";
-import axios from "axios";
 
 const PlantContext = React.createContext();
 class PlantProvidor extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      data: {}
     };
   }
 
-  getInfo = () =>{
-  //  const image64 = encodeImageFileAsURL();
-  //  const imageId = plantId(image64);
-  console.log("get info functoon")
+  plantId = srcData => {
+    var body = {
+      // 'key': "The Key Goes Here",
+      usage_info: true,
+      images: [srcData]
+    };
 
-
-  }
-
-encodeImageFileAsURL = () => {
-  const filesSelected = document.getElementById("inputFileToLoad").files;
-          if (filesSelected.length > 0) {
-              const fileToLoad = filesSelected[0];
-  
-              const fileReader = new FileReader();
-  
-              fileReader.onload =  (fileLoadedEvent) => {
-                  let srcData = fileLoadedEvent.target.result; // <--- data: base64
-                return srcData
-              }
-              fileReader.readAsDataURL(fileToLoad);
-          }
-    }
-
-//     plantId = (srcData) => {
-//     var request = new XMLHttpRequest();
-// request.open('POST', 'https://api.plant.id/identify?New%20item=');
-// request.setRequestHeader('Content-Type', 'application/json');
-// request.onreadystatechange = function () {
-//   if (this.readyState === 4) {
-//     console.log('Status:', this.status);
-//     console.log('Headers:', this.getAllResponseHeaders());
-//     console.log('Body:', this.responseText);    
-//   }
-// };
-// var body = {
-//     // 'key': 'uIAfQNkeEafSl721A9GvkgsbxqWj5X5uw5l4L0PAPn49nNZrHk',  
-//     'usage_info': true,          
-//     'images': [                    
-//       srcData
-//     ],
-// };
-// request.send(JSON.stringify(body));
-
-//     }
-//     plantData = () => {
-
-//       var request = new XMLHttpRequest();
-//       request.open('POST', 'https://api.plant.id/check_identifications');
-//       request.setRequestHeader('Content-Type', 'application/json');
-//       request.onreadystatechange = function () {
-//         if (this.readyState === 4) {
-//           console.log('Status:', this.status);
-//           console.log('Headers:', this.getAllResponseHeaders());
-//           console.log('Body:', this.responseText);
-//         }
-//       };
-//       var body =     {
-//         'key': 'uIAfQNkeEafSl721A9GvkgsbxqWj5X5uw5l4L0PAPn49nNZrHk',
-        
-//         'ids': [ 220463],
-//         // 'custom_ids': [666]
-//       };
-//       request.send(JSON.stringify(body));
-//     }
+    fetch("https://api.plant.id/identify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(body)
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        setTimeout(() => {
+          fetch("https://api.plant.id/check_identifications", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: JSON.stringify({
+              // 'key': "The Key Goes Here",
+              ids: [parseInt(data.id)]
+            })
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log("2nd", data);
+              console.log("whole suggestion ", data[0].suggestions[0]);
+              console.log(" image", data[0].images[0].url);
+              this.setState({
+                data: data[0].suggestions[0],
+                name: data[0].suggestions[0].plant.name,
+                wiki: data[0].suggestions[0].plant.url,
+                image: data[0].images[0].url
+              });
+            }).catch(err => {
+              console.log(err)
+            });
+        }, 10000);
+      }).catch(error => {
+        console.log(error)
+      });
+  };
 
   render() {
-    
     return (
       <PlantContext.Provider
         value={{
           ...this.state,
-          getProducts: this.getProducts,
+          plantId: this.plantId
         }}
       >
         {this.props.children}
