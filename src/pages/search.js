@@ -1,9 +1,10 @@
 import React from "react";
 import getPalntID from "../getPlantID1";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Rightside from "../components/Rightside";
 import Leftside from "../components/Leftside";
 
-function Home() {
+function Search() {
   return (
     <div className="row">
       <h1> Home</h1>
@@ -13,7 +14,8 @@ function Home() {
       <div className="col s8">
         <Rightside />
       </div>
+      
     </div>
   );
 }
-export default Home;
+export default Search;
