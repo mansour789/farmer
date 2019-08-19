@@ -12,7 +12,7 @@ render(){
         <div className="section no-pad-bot">
            <div class="container">
              <br/> <br/> 
-             <h1 className="header center teal-text text-lighten-2">This is the start page </h1>
+             <h4 className="header center teal-text text-lighten-2"> Welcome to Falah website <br/> Falah will make you aware of all the plants around you by three simple steps <br/> <br/> Upload .. Process .. Result  </h4>
                <div class="row center">
                 <a class="waves-effect light-green lighten-5 btn "> <Link to= '/search'> Start Now  </Link> </a>
                </div>
