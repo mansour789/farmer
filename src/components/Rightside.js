@@ -3,11 +3,10 @@ import { PlantContext } from "../Context";
 import getData from "../getPlantData2";
 import Loading from "./Loading";
 
-
 class Rightside extends Component {
   static contextType = PlantContext;
   render() {
-    const {data, image, loading} = this.context;
+    const { data, image, loading } = this.context;
     //  console.log(data)
     // console.log(data.plant.name,);
     //  console.log(data.plant.name)
@@ -22,76 +21,44 @@ class Rightside extends Component {
     // console.log(getData.images[0].url);
 
     return (
-      <>
-      {loading ? <Loading /> :
-       <>
-        <div className="row center">
-          <img src={`${getData.images[0].url}`} alt="" />
+        <div className="center">
+      <div className="row ">
+        <div className="col s12 m7 ">
+            
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <img src={`${getData.images[0].url}`} />
+            </div>
+            <span class="card-title">{getData.suggestions[0].plant.name}</span>
+            <div class="card-content">
+              <p>
+                The Image is {getData.suggestions[0].plant.name} with confidence
+                of {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
+              </p>
+            </div>
+            <div class="card-action">
+              {getData.suggestions[0].plant.url ? (
+                <a
+                  href={`${getData.suggestions[0].plant.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Click here more info on Wikipidia
+                </a>
+              ) : null}
+              <br/>
+               <a
+                  href={`${getData.suggestions[0].plant.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Click hereGOOGLE MAP
+                </a>
+            </div>
+          </div>
         </div>
-        
-        <div className="row">
-          <div className="col s12 m4">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">
-                  It is a {getData.suggestions[0].plant.name}
-                </span>
-                <p>
-                  The Image is {getData.suggestions[0].plant.name} with
-                  confidence of{" "}
-                  {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
-                </p>
-              </div>
-              <div className="card-action">
-              {getData.suggestions[0].plant.url ? <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
-                  Click here more info on Wikipidia
-                </a> : null}  
-              </div>
-            </div>
-          </div>
-    
-          <div className="col s12 m4">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">
-                  It is a {getData.suggestions[0].plant.name}
-                </span>
-                <p>
-                  The Image is {getData.suggestions[0].plant.name} with
-                  confidence of{" "}
-                  {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
-                </p>
-              </div>
-              <div className="card-action">
-                <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
-                  Click here more info on Wikipidia
-                </a>
-              </div>
-            </div>
-          </div>
-        
-        <div className="col s12 m4">
-            <div className="card blue-grey darken-1">
-              <div className="card-content white-text">
-                <span className="card-title">
-                  It is a {getData.suggestions[0].plant.name}
-                </span>
-                <p>
-                  The Image is {getData.suggestions[0].plant.name} with
-                  confidence of{" "}
-                  {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
-                </p>
-              </div>
-              <div className="card-action">
-                <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
-                  Click here more info on Wikipidia
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> 
-        </>}
-      </>
+      </div>
+      </div>
     );
   }
 }
