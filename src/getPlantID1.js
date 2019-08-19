@@ -1,4 +1,4 @@
-{
+ const getID = [{
     "id": 220463,
     "custom_id": null,
     "custom_url": null,
@@ -35,4 +35,7 @@
         "used_month": 2,
         "used_total": 2
     }
-}
+}]
+
+
+export default getID;

@@ -17,19 +17,16 @@ function App() {
 
   <Router> 
 
-    <div>
+   
 
       <Navbar/>
 
       <Route  path="/" component={Home} exact /> 
       <Route  path="/aboutus" component={AboutUs} /> 
       <Route  path="/contact" component={Contact} /> 
-    
-    </div>
-    <div >  
+  
             <Footer/>
-</div>
-   
+
 
   </Router>
 

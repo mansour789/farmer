@@ -1,4 +1,4 @@
- [
+const getData =  
     {
         "id": 220463,
         "custom_id": null,
@@ -134,4 +134,7 @@
         "fail_cause": null,
         "source": "mansouralmohsen2018@gmail.com"
     }
-]
+
+
+
+export default getData;
