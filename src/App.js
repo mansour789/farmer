@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Search from './pages/search'; 
 import StartPage from './components/StartPage'; 
 import AboutUs from './pages/AboutUs';
-import Contact from './pages/Contact'; 
 import Footer from './components/Footer'; 
 
 
@@ -20,14 +19,15 @@ function App() {
   <Router> 
 
    
-
+     <div className="b"> 
       <Navbar/>  
       <Route exact path="/" component={StartPage}  /> 
       <Route exact path="/search" component={Search} /> 
       <Route exact path="/aboutus" component={AboutUs} /> 
-      <Route exact path="/contact" component={Contact} /> 
+     
   
       <Footer/>
+      </div> 
 
 
   </Router>

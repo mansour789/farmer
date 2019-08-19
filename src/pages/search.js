@@ -5,19 +5,20 @@ import Rightside from "../components/Rightside";
 import Leftside from "../components/Leftside";
 
 function Search() {
-  return (
-     <div>
-    <div className="row">
-      <h1> Home</h1>
-      <div className="col s4">
-        <Leftside />
+
+   return (
+    <div className="row"><br/><br/>
+    
+      <div className="col s5 ">
+         <Leftside />
       </div>
-      <div className="col s8">
+      <div className="col s7">
         <Rightside />
       </div>
-      
+
     </div>
-    </div> 
+  
+
   );
 }
 export default Search;
