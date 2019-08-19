@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home'; 
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact'; 
+import Footer from './components/Footer'; 
+
 import 'materialize-css/dist/css/materialize.min.css'; 
 
 
@@ -15,17 +17,21 @@ function App() {
 
   <Router> 
 
-    <div>
+   
 
       <Navbar/>
 
       <Route  path="/" component={Home} exact /> 
       <Route  path="/aboutus" component={AboutUs} /> 
       <Route  path="/contact" component={Contact} /> 
+  
+            <Footer/>
 
-    </div>
 
   </Router>
+
+
+ 
   );
 }
 
