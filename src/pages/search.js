@@ -1,24 +1,34 @@
-import React from "react";
-import getPalntID from "../getPlantID1";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from 'react'
 import Rightside from "../components/Rightside";
 import Leftside from "../components/Leftside";
 
-function Search() {
 
-   return (
-    <div className="row"><br/><br/>
-    
-      <div className="col s5 ">
-         <Leftside />
+
+
+ class Search extends Component {
+   state = {beigen: true}
+   startProccess = () => {
+     this.setState({
+       beigen: false
+     })
+   }
+  render() {
+    return (
+      <div className="row"><br/><br/>
+      <div className="col s5">
+        <Leftside  startProccess={this.startProccess}/>
+
       </div>
-      <div className="col s7">
+      {this.state.beigen ? null : <div className="col s7">
         <Rightside />
-      </div>
 
+      </div>}
+      
+      
     </div>
-  
+    )
+  }
 
-  );
 }
+
 export default Search;

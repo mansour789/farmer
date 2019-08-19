@@ -7,7 +7,7 @@ class Loading extends Component {
       <div className="progress">
         <div className="indeterminate" />
       </div>
-        <h3>We are processing you photo, Please hold on</h3>
+        <h3>We are processing you photo, Hold on</h3>
         </>
     );
   }

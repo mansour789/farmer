@@ -38,7 +38,7 @@ class Leftside extends Component {
               <li>Additional links will be provided too.</li>
           </ol>
           <input id="inputFileToLoad" type="file" onChange={this.encodeImageFileAsURL} />
-          
+          <button className="waves-effect light-green lighten-1 btn mb-3" onClick={this.props.startProccess}>Upload</button>
         </div>
       </div> 
     </div> 
