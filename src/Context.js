@@ -7,7 +7,9 @@ class PlantProvidor extends Component {
     super(props);
     this.state = {
       data: {},
-      loading: false
+      image: "",
+      loading: false,
+      remaining: 0
     };
   }
 
@@ -32,6 +34,9 @@ class PlantProvidor extends Component {
       .then(response => response.json())
       .then(data => {
         console.log(data);
+        this.setState({
+          remaining: data[0].usage_info.used_week - 20
+        })
         setTimeout(() => {
           fetch("https://api.plant.id/check_identifications", {
             method: "POST",
