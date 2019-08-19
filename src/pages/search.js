@@ -1,19 +1,20 @@
 import React from "react";
 import getPalntID from "../getPlantID1";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Rightside from "../components/Rightside";
 import Leftside from "../components/Leftside";
 
-function Home() {
+function Search() {
   return (
-    <div className="row">
-      <h1> Home</h1>
-      <div className="col s4">
+    <div className="row"><br/><br/>
+      <div className="col s5 ">
         <Leftside />
       </div>
-      <div className="col s8">
+      <div className="col s7">
         <Rightside />
       </div>
+      
     </div>
   );
 }
-export default Home;
+export default Search;

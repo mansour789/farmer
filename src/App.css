@@ -45,7 +45,8 @@
   }
 }
 
-.card{
+
+.cardF{
 
 width: 33.3333333333%;
 height: 350px;
@@ -55,6 +56,7 @@ text-align: center;
     left: auto;
     right: auto;
 }
+
 .mkf{
   margin-top: 13px;
 }
@@ -64,3 +66,13 @@ text-align: center;
 .message{
   color: rgb(255, 255, 255,0.5)
 }
+
+
+.centerV{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+

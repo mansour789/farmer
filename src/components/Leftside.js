@@ -26,12 +26,19 @@ class Leftside extends Component {
    
     return(
     <div>
-      <div className="row">
-        <div className="col s12 m8"> 
-          <h3> -------- </h3>
-          <p className="form_subtitle"> Upload an image to be processed </p>
+      <div className="row ">
+          
+        <div className="col s12 m8 "> 
+          <br/><br/><br/><br/><br/><br/>
+          <h6 className="form_subtitle"> Upload an image to be processed </h6>
+          <ol type="I">
+              <li>Upload plant's image.</li>
+              <li>Wait for the magic of the data science.</li>
+              <li>Plant Information will be provided. </li>
+              <li>Additional links will be provided too.</li>
+          </ol>
           <input id="inputFileToLoad" type="file" onChange={this.encodeImageFileAsURL} />
-         <span> <a className="waves-effect waves-light btn-small">Upload</a> </span> 
+          
         </div>
       </div> 
     </div> 
