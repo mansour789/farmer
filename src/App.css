@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -41,3 +42,14 @@ footer {
   }
 }
 
+
+.card{
+
+width: 33.3333333333%;
+height: 350px;
+padding:10px;
+text-align: center;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
