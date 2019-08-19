@@ -10,12 +10,14 @@ class Navbar extends Component{
     <nav>
 
       <div class="nav-wrapper light-green darken-2 ">
-
-        <a href="#" class="brand-logo">Logo</a>
+        <a href="" class="brand-logo"> <img class="material-icons" style={{"height":"62px", "border-radius":"20%"}} src="./img/logo.png"/></a>
+       
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li> <Link to="/">Home</Link> </li>
             <li> <Link to="/aboutus">About</Link> </li>
             <li> <Link to="/contact">Contact</Link> </li>
+            
           </ul>
 
       </div>
