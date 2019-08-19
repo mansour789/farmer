@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { PlantContext } from "../Context";
 import getData from "../getPlantData2";
+import Loading from "./Loading";
 
 
 class Rightside extends Component {
   static contextType = PlantContext;
   render() {
-    // const {data, image, loading} = this.context;
+    const {data, image, loading} = this.context;
     //  console.log(data)
     // console.log(data.plant.name,);
     //  console.log(data.plant.name)
@@ -22,11 +23,12 @@ class Rightside extends Component {
 
     return (
       <>
-      {/* {loading ? <Loading /> : */}
+      {loading ? <Loading /> :
        <>
         <div className="row center">
           <img src={`${getData.images[0].url}`} alt="" />
         </div>
+        
         <div className="row">
           <div className="col s12 m4">
             <div className="card blue-grey darken-1">
@@ -41,7 +43,7 @@ class Rightside extends Component {
                 </p>
               </div>
               <div className="card-action">
-              {getData.suggestions[0].plant.url ? <a href={`${getData.suggestions[0].plant.url}`} target="_blank">
+              {getData.suggestions[0].plant.url ? <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
                   Click here more info on Wikipidia
                 </a> : null}  
               </div>
@@ -61,7 +63,7 @@ class Rightside extends Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href={`${getData.suggestions[0].plant.url}`} target="_blank">
+                <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
                   Click here more info on Wikipidia
                 </a>
               </div>
@@ -81,7 +83,7 @@ class Rightside extends Component {
                 </p>
               </div>
               <div className="card-action">
-                <a href={`${getData.suggestions[0].plant.url}`} target="_blank">
+                <a href={`${getData.suggestions[0].plant.url}`} target="_blank" rel="noopener noreferrer">
                   Click here more info on Wikipidia
                 </a>
               </div>
