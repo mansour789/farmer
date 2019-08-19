@@ -25,6 +25,7 @@ class Rightside extends Component {
       <>
       {loading ? <Loading /> :
        <>
+       <div> 
         <div className="row center">
           <img src={`${getData.images[0].url}`} alt="" />
         </div>
@@ -90,6 +91,7 @@ class Rightside extends Component {
             </div>
           </div>
         </div> 
+        </div>
         </>}
       </>
     );

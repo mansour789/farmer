@@ -6,6 +6,7 @@ import Leftside from "../components/Leftside";
 
 function Search() {
   return (
+     <div>
     <div className="row">
       <h1> Home</h1>
       <div className="col s4">
@@ -16,6 +17,7 @@ function Search() {
       </div>
       
     </div>
+    </div> 
   );
 }
 export default Search;

@@ -4,8 +4,9 @@ import '../App.css';
 
 function AboutUs(){
     return (
-<div>
+      <div>
     <body>
+  
   <div className="section no-pad-bot" id="index-banner">
     <div className="container">
      

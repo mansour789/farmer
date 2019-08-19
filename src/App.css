@@ -53,3 +53,7 @@ text-align: center;
     left: auto;
     right: auto;
 }
+
+
+.navbar-fixed {position: absolute;z-index:999999999;} 
+
