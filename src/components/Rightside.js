@@ -21,8 +21,11 @@ class Rightside extends Component {
     // console.log(getData.images[0].url);
 
     return (
+
+
       <>
       {loading ? <Loading /> : <>
+
         <div className="center">
       <div className="row ">
         <div className="col s12 m7 ">
@@ -30,6 +33,7 @@ class Rightside extends Component {
           <div class="card z-depth-5">
             <div class="card-image">
               <img src={`${getData.images[0].url}`} />
+
             </div>
             <span class="card-title">{getData.suggestions[0].plant.name}</span>
             <div class="card-content">
@@ -58,11 +62,17 @@ class Rightside extends Component {
                 </a>
             </div>
           </div>
+
+
         </div>
       </div>
       </div>
+
+
+
       </>}
       </>
+
     );
   }
 }

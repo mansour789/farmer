@@ -29,8 +29,8 @@ class Leftside extends Component {
       <div className="row ">
           
         <div className="col s12 m8 "> 
-          <br/><br/><br/><br/><br/><br/>
-          <h6 className="form_subtitle"> Upload an image to be processed </h6>
+          <br/><br/><br/><br/>
+          <h4 className="form_subtitle"> Upload an image to be processed </h4>
           <ol type="I">
               <li>Upload plant's image.</li>
               <li>Wait for the magic of the data science.</li>

@@ -5,37 +5,16 @@ class Footer extends Component{
     render(){
         return(
 
-        
-            
-//             
-         
-
-//   <div class="grey-text text-lighten-1 ">
-//           © 2019-2020 Copyright
-          
-//           </div>
-//       </footer>
-<footer class="foot">
-            {/* <div class=" grey-text text-lighten-1 ">
-            © 2014 Copyright 
            
+    <footer class="footer transparent z-depth-0 ">
 
-            <div class="chip grey-text right mkf ">
-    <img  src="./img/logo.png" alt="Contact Person" className=""></img>
-    Farmar +9660000
-    
-  </div>
-         </div>    */}
+      <p class="copyright">© 2019 Copyright</p>
+      <p class="message">Created with &hearts; by <span class="name">The 4 GEEKS</span></p>
 
-         <p class="copyright">© 2019-2020 Copyright</p>
-         <p class="message">Created with &hearts; by <span class="name">The 4 GEEKS</span></p>
+         <div class="chip white black-text right mkf ">Falah +9660000</div>
 
-         <div class="chip grey-text right mkf ">
-    <img  src="./img/logo.png" alt="Contact Person" className=""></img>
-    Farmar +9660000
-    
-  </div>
-            </footer>
+    </footer>
+           
             
         )
     }

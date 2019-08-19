@@ -19,14 +19,15 @@ function App() {
   <Router> 
 
    
-
+     <div className="b"> 
       <Navbar/>  
       <Route exact path="/" component={StartPage}  /> 
       <Route exact path="/search" component={Search} /> 
       <Route exact path="/aboutus" component={AboutUs} /> 
      
   
-            <Footer/>
+      <Footer/>
+      </div> 
 
 
   </Router>

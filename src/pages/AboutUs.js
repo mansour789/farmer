@@ -7,12 +7,13 @@ function AboutUs() {
     <div>
       <div className="section no-pad-bot" id="index-banner">
         <div className="container">
-          <h1 className="header center orange-text">Falah</h1>
+          <h2 className="header center black-text">Fallah</h2>
           <div className="row center">
             <h5 className="header col s12 light">
               Our mission is to make every kind of plants knowing by everyone.
             </h5>
           </div>
+
         </div>
       </div>
 
@@ -27,7 +28,7 @@ function AboutUs() {
               <div>
                 {" "}
                 <p className=" ">
-                  Our Falah make it easy for everyone. It will prevent you from
+                  Our Fallah make it easy for everyone. It will prevent you from
                   wasting your money!.
                 </p>{" "}
               </div>
@@ -43,7 +44,7 @@ function AboutUs() {
               <div>
                 {" "}
                 <p className=" ">
-                  With Falah guidance and over 391,000 different types of plants
+                  With Fallah guidance and over 391,000 different types of plants
                   we help you to make smarter decisions.
                 </p>{" "}
               </div>
@@ -58,7 +59,7 @@ function AboutUs() {
                 <div>
                   {" "}
                   <p className=" ">
-                    With Falah you can see the nearest place plantation to you.
+                    With Fallah you can see the nearest place plantation to you.
                   </p>{" "}
                 </div>
               </div>

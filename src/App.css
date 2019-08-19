@@ -8,8 +8,8 @@
   height: 40vmin;
   pointer-events: none;
 }
-.foot {
-  background-color:#689F38;
+.footer {
+ color: black; 
   width: 100%;
   height: 9%;
   bottom: 0;
@@ -49,22 +49,24 @@
 .cardF{
 
 width: 33.3333333333%;
-height: 350px;
+height: 300px;
 padding:10px;
 text-align: center;
-    margin-left: auto;
-    left: auto;
-    right: auto;
+margin-left: auto;
+left: auto;
+right: auto; 
+
 }
+
 
 .mkf{
   margin-top: 13px;
 }
 .copyright{
-  color: rgb(255, 255, 255,0.5)
+  color:white; 
 }
 .message{
-  color: rgb(255, 255, 255,0.5)
+  color:white;
 }
 
 
@@ -73,6 +75,19 @@ text-align: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+
+
+.b{
+    background: url("http://whatworksconsultants.com/wp-content/uploads/2014/12/seeds-sprouting-in-soil.jpg") center fixed; 
+    background-size: cover;
+    position:fixed;
+    top:0px;
+    left:0px; 
+    width:100%;
+    height:100%;
+    
 }
 
 

@@ -4,6 +4,7 @@ import Leftside from "../components/Leftside";
 
 
 
+
  class Search extends Component {
    state = {beigen: true}
    startProccess = () => {
@@ -14,17 +15,20 @@ import Leftside from "../components/Leftside";
   render() {
     return (
       <div className="row"><br/><br/>
-      <div className="col s5 ">
+      <div className="col s5">
         <Leftside  startProccess={this.startProccess}/>
+
       </div>
       {this.state.beigen ? null : <div className="col s7">
         <Rightside />
+
       </div>}
       
       
     </div>
     )
   }
+
 }
 
 export default Search;
