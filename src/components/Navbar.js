@@ -28,6 +28,7 @@ class Navbar extends Component {
                   />
                 </a>
 
+
                 <a
                   href="#"
                   data-target="mobile-demo"
@@ -57,6 +58,8 @@ class Navbar extends Component {
             </div>
           </div>
         </nav>
+
+
        
       </div>
 
