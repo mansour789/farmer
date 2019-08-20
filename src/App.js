@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Navbar from './components/Navbar'; 
 import Search from './pages/search'; 
 import StartPage from './components/StartPage'; 
@@ -14,6 +14,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 
 
 function App() {
+  // console.log(M)
   return (
 
   <Router> 

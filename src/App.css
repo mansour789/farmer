@@ -91,3 +91,6 @@ right: auto;
 }
 
 
+.sidenav-overlay{
+  z-index: -1 !important
+}
