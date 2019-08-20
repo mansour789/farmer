@@ -6,12 +6,12 @@ class Footer extends Component{
         return(
 
            
-    <footer class="footer transparent z-depth-0 ">
+    <footer className="footer transparent z-depth-0 ">
 
-      <p class="copyright">© 2019 Copyright</p>
-      <p class="message">Created with &hearts; by <span class="name">The 4 GEEKS</span></p>
+      <p className="copyright">© 2019 Copyright</p>
+      <p className="message">Created with &hearts; by <span className="name">The 4 GEEKS</span></p>
 
-         <div class="chip white black-text right mkf ">Falah +9660000</div>
+         <div className="chip white black-text right mkf ">Falah +9660000</div>
 
     </footer>
            
