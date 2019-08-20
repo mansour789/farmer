@@ -5,7 +5,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## summry 
+## summary 
 Fallah website is used to recognize plant image and provide you the name of plant and some information about it . 
 
 
@@ -88,7 +88,7 @@ Fallah website is used to recognize plant image and provide you the name of plan
 
 ### Resources
 
-**create-react-app** :  [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
-**materializecss** :  [https://materializecss.com](https://materializecss.com/)
-**Plants Identification API** : [https://web.plant.id/plant-identification-api/](https://web.plant.id/plant-identification-api/) 
+- **create-react-app** :  [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+- **materializecss** :  [https://materializecss.com](https://materializecss.com/)
+- **Plants Identification API** : [https://web.plant.id/plant-identification-api/](https://web.plant.id/plant-identification-api/) 
 
