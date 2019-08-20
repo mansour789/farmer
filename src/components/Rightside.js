@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { PlantContext } from "../Context";
 import getData from "../getPlantData2";
 import Loading from "./Loading";
+import {Link} from 'react-router-dom'
 
 class Rightside extends Component {
   static contextType = PlantContext;
@@ -52,14 +53,10 @@ class Rightside extends Component {
                   Click here more info on Wikipidia
                 </a>
               ) : null}
-              <br/>
-               <a
-                  href={`${getData.suggestions[0].plant.url}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Click hereGOOGLE MAP
-                </a>
+              <br/>{" "}
+              <a><Link to="/google">
+           Find The Nearest Plant Store
+         </Link></a>
             </div>
           </div>
 

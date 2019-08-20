@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 
 
 import 'materialize-css/dist/css/materialize.min.css'; 
+import Google from './pages/google';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Route exact path="/" component={StartPage}  /> 
       <Route exact path="/search" component={Search} /> 
       <Route exact path="/aboutus" component={AboutUs} /> 
+      <Route exact path="/google" component={Google} /> 
      
   
       <Footer/>
