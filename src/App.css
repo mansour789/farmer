@@ -96,3 +96,7 @@ right: auto;
   z-index: -1 !important
 }
 
+.sidenav{
+  /* z-index: 1 !important */
+}
+
