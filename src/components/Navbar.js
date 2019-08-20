@@ -23,7 +23,7 @@ class Navbar extends Component {
                   {" "}
                   <img
                     className="material-icons"
-                    style={{ height: "62px", borderRadius: "20%" }}
+                    style={{ height: "150px", width: "180px",borderRadius: "20%" }}
                     src="./img/logo.png"
                   />
                 </a>
