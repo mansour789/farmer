@@ -1,59 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fallah website :herb:
 
-## Available Scripts
 
-In the project directory, you can run:
+![logo](https://i.ibb.co/BntGYjY/logo.png)
 
-### `npm start`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## summry 
+Fallah website is used to recognize plant image and provide you the name of plant and some information about it . 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### Getting  started 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  Clone the project into local
 
-### `npm run build`
+ - Install all the npm packages. Go into the project folder and   type the following command to install all npm packages. 
+    `````
+   npm install
+   `````
+   
+- In order to run the application Type the following command
+     `````
+   npm start
+   `````
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+  The Application Runs on  **localhost:3000**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### Instruction:
+### Application design
 
 ```
+
 ....index
+
 .... ....|_App
+
 .... ....|_______Navbar =>{Parent Component}
-.... ....| .... .... .... ...|__Button =>{Child Component}
-.... ....| .... .... .... ...|__Logo
+
+.... ....| .... .... .... ...|__ aboutUs
+
+.... ....| .... .... .... ...|__ Home 
+
 .... ....|
+
 .... ....|_______Input(Left Side) =>{Parent Component}
+
 .... ....| .... .... .... ...|__introduction =>{Child Component}
-.... ....|.... .... .... ... |__Up load image button =>{Child Component}
+
+.... ....|.... .... .... ... |__Upload image button =>{Child Component}
+
 .... ....|.... .... .... ... |__Loading =>{Child Component}
+
 .... ....|
+
 .... ....|________Information(right Side) =>{Parent Component}
+
 .... ....| .... .... .... ...|__Display Image =>{Child Component}
+
 .... ....| .... .... .... ...|__Cards Component =>{Child Component}
+
 .... ....|
+
 .... ....|
+
 .... ....|
+
 .... ....|__Footer =>{Component}
 
-  ```
   
 
-### APIs:
+```
 
-1. Plant.id
 
-2. // Need an API that provide a plant name then he will give us some info about it. 
+
+### Wireframe 
+
+
+![wireframe](https://b.imge.to/2019/08/20/OyIDx.png)
+
+
+
+### Live Application URL
+
+
+
+
+
+
+### Resources
+
+**create-react-app** :  [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+**materializecss** :  [https://materializecss.com](https://materializecss.com/)
+**Plants Identification API** : [https://web.plant.id/plant-identification-api/](https://web.plant.id/plant-identification-api/) 
+
