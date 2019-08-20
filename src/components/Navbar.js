@@ -19,63 +19,39 @@ class Navbar extends Component {
               <div className="col s12">
                 <a href="" className="brand-logo">
                   {" "}
-                  <img
-                    className="material-icons"
-                    style={{ height: "150px", width: "180px",borderRadius: "20%" }}
-                    src="./img/logo.png"
-                  />
+            <img className="material-icons" style={{ height: "120px", width: "120px",borderRadius: "20%" }} 
+            src="./img/logo.png"/>
                 </a>
 
 
 
-                <a
-                  href="#"
-                  data-target="mobile-demo"
-                  className="sidenav-trigger"
-                >
-                  <i
-                    className="material-icons black-text"
-                  >
-                    menu
-                  </i>
+                <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+                  <i className="material-icons black-text">menu </i>
                 </a>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
-                  <li>
-                    {" "}
-                    <Link to="/" className="black-text">
-                      Home
-                    </Link>{" "}
+
+                  <li>{" "}
+                    <Link to="/" className="black-text"> Home </Link>{" "}
                   </li>
-                  <li>
-                    {" "}
-                    <Link to="/aboutus" className="black-text">
-                      About
-                    </Link>{" "}
+                  <li> {" "} <Link to="/aboutus" className="black-text"> About </Link>{" "}
                   </li>
+      
                 </ul>
               </div>
             </div>
           </div>
         </nav>
-
-
-
-       
+  
       </div>
 
-       <ul className="sidenav " id="mobile-demo">
-       <li>
-         {" "}
-        <Link to="/" className="black-text">
-           Home
-         </Link>{" "}
+       <ul className="sidenav" id="mobile-demo" >
+       <li> {" "}
+        <Link to="/" className="black-text"> Home </Link>{" "}
        </li>
-       <li>
-         {" "}
-         <Link to="/aboutus" className="black-text">
-           About
-         </Link>{" "}
+       <li> {" "}
+         <Link to="/aboutus" className="black-text"> About </Link>{" "}
        </li>
+       <li> <a class="sidenav-close" href="#!">close</a> </li>
      </ul>
      </>
     );
