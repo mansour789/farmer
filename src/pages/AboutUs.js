@@ -24,6 +24,7 @@ function AboutUs() {
               <img
                 src="https://t6.rbxcdn.com/69d42918b87981cd61bd0ecae48d91a4"
                 width="150"
+                alt='pictuer'
               />
               <div>
                 {" "}
@@ -34,11 +35,12 @@ function AboutUs() {
               </div>
             </div>
 
-            <div class="card col s12 m4 cardF">
+            <div className="card col s12 m4 cardF">
               <img
-                class=" "
+                className=" "
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlg3-cJnljUnlKsaGHV4JQoyWcekV-hQpLvEmGlvSCIrdqkDCC"
                 width="100"
+                alt='pictuer'
               />
 
               <div>
@@ -50,11 +52,12 @@ function AboutUs() {
               </div>
             </div>
 
-            <div class="card col s12 m4 cardF">
+            <div className="card col s12 m4 cardF">
               <div>
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROAQCDjOSMXRvwYdWzUhajUJv_8tjPIXooICRz7NbTZCvSIinH"
                   width="150"
+                  alt='pictuer'
                 />
                 <div>
                   {" "}

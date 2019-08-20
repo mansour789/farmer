@@ -30,19 +30,19 @@ class Rightside extends Component {
       <div className="row ">
         <div className="col s12 m7 ">
             
-          <div class="card z-depth-5">
-            <div class="card-image">
-              <img src={`${getData.images[0].url}`} />
+          <div className="card z-depth-5">
+            <div className="card-image">
+              <img src={`${getData.images[0].url}`} alt='pictuer' />
 
             </div>
-            <span class="card-title">{getData.suggestions[0].plant.name}</span>
-            <div class="card-content">
+            <span className="card-title">{getData.suggestions[0].plant.name}</span>
+            <div className="card-content">
               <p>
                 The Image is {getData.suggestions[0].plant.name} with confidence
                 of {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
               </p>
             </div>
-            <div class="card-action">
+            <div className="card-action">
               {getData.suggestions[0].plant.url ? (
                 <a
                   href={`${getData.suggestions[0].plant.url}`}

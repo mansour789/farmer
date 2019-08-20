@@ -4,10 +4,6 @@ import { PlantContext } from '../Context';
 class Leftside extends Component {
     static contextType = PlantContext;
 
-    constructor(props) {
-        super(props)
-    
-    }
     
     encodeImageFileAsURL = () => {
         const filesSelected = document.getElementById("inputFileToLoad").files;
