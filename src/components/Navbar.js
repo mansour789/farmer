@@ -1,41 +1,85 @@
-import React, {Component} from 'react'; 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import '../App.css';
+import * as M from "materialize-css/dist/js/materialize.min.js";
+class Navbar extends Component {
+  componentDidMount() {
+    M.Sidenav.init(document.querySelector(".sidenav"));
+     
+  }
 
-class Navbar extends Component{
-    render(){
+  render() {
+    
     return (
-
+      <>
       <div className="navbar-fixed">
-      
-    <nav className="transparent z-depth-0">
+        <nav className="transparent z-depth-0">
+          <div className="nav-wrapper">
+            <div className="row">
+              <div className="col s12">
+                <a href="" className="brand-logo">
+                  {" "}
+                  <img
+                    className="material-icons"
+                    style={{ height: "150px", width: "180px",borderRadius: "20%" }}
+                    src="./img/logo.png"
+                  />
+                </a>
 
 
-      <div className="nav-wrapper">
-      <div classNmae="row">
-      <div class="col s12"> 
-        <a href="" class="brand-logo"> <img class="material-icons" style={{"height":"62px", "border-radius":"20%"}} src="./img/logo.png"/></a>
+
+                <a
+                  href="#"
+                  data-target="mobile-demo"
+                  className="sidenav-trigger"
+                >
+                  <i
+                    className="material-icons black-text"
+                  >
+                    menu
+                  </i>
+                </a>
+                <ul id="nav-mobile" className="right hide-on-med-and-down">
+                  <li>
+                    {" "}
+                    <Link to="/" className="black-text">
+                      Home
+                    </Link>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to="/aboutus" className="black-text">
+                      About
+                    </Link>{" "}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+
        
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-   
-            <li> <Link to="/" className="black-text">Home</Link> </li>
-            <li> <Link to="/aboutus" className="black-text">About</Link> </li>
-            
-          </ul>
-      </div> 
       </div>
-      </div> 
 
-    </nav>
-
-        
- </div>
-
-    ); 
-    }
+       <ul className="sidenav " id="mobile-demo">
+       <li>
+         {" "}
+        <Link to="/" className="black-text">
+           Home
+         </Link>{" "}
+       </li>
+       <li>
+         {" "}
+         <Link to="/aboutus" className="black-text">
+           About
+         </Link>{" "}
+       </li>
+     </ul>
+     </>
+    );
+  }
 }
-
-
 
 export default Navbar;

@@ -89,3 +89,13 @@ right: auto;
     height:100%;
     
 }
+<<<<<<< HEAD
+=======
+
+
+
+.sidenav-overlay{
+  z-index: -1 !important
+}
+
+>>>>>>> master
