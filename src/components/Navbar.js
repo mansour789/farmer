@@ -13,7 +13,7 @@ class Navbar extends Component{
       <div className="nav-wrapper">
       <div classNmae="row">
       <div class="col s12"> 
-        <a href="" class="brand-logo"> <img class="material-icons" style={{"height":"62px", "border-radius":"20%"}} src="./img/logo.png"/></a>
+        <a href="" class="brand-logo"> <img class="material-icons" style={{"height":"150px", "width":"180px", "border-radius":"20%"}} src="./img/logo.png"/></a>
        
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
