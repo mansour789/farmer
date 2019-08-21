@@ -32,19 +32,15 @@ class Rightside extends Component {
 
 
           {remaining ?   <h5> {20 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
-          <div className="card z-depth-5">
-
+          <div className="card medium z-depth-5">
             <div className="card-image">
               <img src={image} alt='pictuer' />
-
             </div>
             <span className="card-title">{data.plant.name}</span>
-            <div className="card-content">
-              <p>
+             <p>
                 The Image is {data.plant.name} with confidence
                 of {`${(data.confidence * 100).toFixed(2) } %`}.
-              </p>
-            </div>
+                </p>
             <div className="card-action">
               {data.plant.url ? (
                 <a
