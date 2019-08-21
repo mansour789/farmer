@@ -11,15 +11,17 @@ import {
 import axios from "axios";
 import {Link} from 'react-router-dom'
 import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
-
+//We used google react maps packge 
 const MyMapComponent = compose(
   withProps({
+    //Creat a mape
     googleMapURL:
     `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API_KEY}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `100%` }} />
   }),
+  //define info box is open
   withStateHandlers(
     () => ({
       isOpen: false
@@ -30,13 +32,19 @@ const MyMapComponent = compose(
       })
     }
   ),
+  
   withScriptjs,
   withGoogleMap
 )(props => (
+  //import google map componint
   <GoogleMap
+  //this defaultZoom is the far of the map 
     defaultZoom={11}
+    //center map to the current location of user
+    //and display the markers
     center={{ lat: props.currentLocation.lat, lng: props.currentLocation.lng }}
   >
+  
       {props.isMarkerShown && <Marker position={{ lat: props.currentLocation.lat, lng: props.currentLocation.lng }} />}
     {props.places &&
       props.places.map(place => {
@@ -51,6 +59,7 @@ const MyMapComponent = compose(
             icon={"https://mt.google.com/vt/icon/text=A&psize=16&font=fonts/arialuni_t.ttf&color=ff330000&name=icons/spotlight/spotlight-waypoint-a.png&ax=44&ay=48&scale=1"}
           >
             {props.isOpen && (
+              
               <InfoBox
                 onCloseClick={props.onToggleOpen}
                 options={{ closeBoxURL: ``, enableEventPropagation: true }}
@@ -108,6 +117,9 @@ class Google extends React.PureComponent {
       });
   };
 
+
+
+
   showCurrentLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -153,6 +165,5 @@ class Google extends React.PureComponent {
     );
   }
 }
-
 
 export default Google;
