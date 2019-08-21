@@ -51,7 +51,7 @@ class Navbar extends Component {
        <li> {" "}
          <Link to="/aboutus" className="black-text"> About </Link>{" "}
        </li>
-       <li> <a class="sidenav-close" href="#!">close</a> </li>
+       <li> <a className="sidenav-close" href="#!">close</a> </li>
      </ul>
      </>
     );
