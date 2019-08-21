@@ -15,7 +15,7 @@ import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
 const MyMapComponent = compose(
   withProps({
     googleMapURL:
-
+    `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API_KEY}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `100%` }} />
@@ -92,7 +92,8 @@ class Google extends React.PureComponent {
 
   searchPlace = () => {
     axios
-      .get(
+      .get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=24.718279,46.7465153&radius=15000&type=plant%20store&keyword=plant%20store&key=${process.env.REACT_APP_GOOGLE_API_KEY}`
+
       )
       .then(res => {
         // console.log(res)
