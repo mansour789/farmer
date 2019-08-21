@@ -19,9 +19,9 @@ class PlantProvidor extends Component {
       loading: true
     });
     var body = {
-      // 'key': "The Key Goes Here",
-      usage_info: true,
-      images: [srcData]
+      'key': PLANT_API,
+      'usage_info': true,
+      'images': [srcData]
     };
 
     fetch("https://api.plant.id/identify", {
@@ -46,8 +46,8 @@ class PlantProvidor extends Component {
               Accept: "application/json"
             },
             body: JSON.stringify({
-              // 'key': "The Key Goes Here",
-              ids: [parseInt(data.id)]
+              'key': PLANT_API,
+              'ids': [parseInt(data.id)]
             })
           })
             .then(response => response.json())
