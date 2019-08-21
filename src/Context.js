@@ -36,8 +36,10 @@ class PlantProvidor extends Component {
       .then(data => {
         console.log(data);
         this.setState({
+          
           remaining: data[0].usage_info.used_week - 20
         })
+
         setTimeout(() => {
           fetch("https://api.plant.id/check_identifications", {
             method: "POST",
