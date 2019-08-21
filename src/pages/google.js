@@ -56,6 +56,7 @@ const MyMapComponent = compose(
             }}
             onClick={props.onToggleOpen}
             key={place.id}
+            icon={"https://mt.google.com/vt/icon/text=A&psize=16&font=fonts/arialuni_t.ttf&color=ff330000&name=icons/spotlight/spotlight-waypoint-a.png&ax=44&ay=48&scale=1"}
           >
             {props.isOpen && (
               
