@@ -19,7 +19,8 @@ class PlantProvidor extends Component {
       loading: true
     });
     var body = {
-      // 'key': PLANT_API,
+
+      //  'key': PLANT_API,
       'usage_info': true,
       'images': [srcData]
     };
@@ -36,7 +37,7 @@ class PlantProvidor extends Component {
       .then(data => {
         console.log(data);
         this.setState({
-          remaining: data[0].usage_info.used_week 
+          remaining: data.usage_info.used_week 
         })
         setTimeout(() => {
           fetch("https://api.plant.id/check_identifications", {
@@ -57,8 +58,11 @@ class PlantProvidor extends Component {
               console.log(" image", data[0].images[0].url);
               this.setState({
                 data: data[0].suggestions[0],
-                image: data[0].images[0].url,
-                loading: false
+
+
+                image: data[0].images[0].url_tiny,
+                loading:false
+
               });
               //Please Active This
               // this.moreInfo(suggestions[0].plant.name);
@@ -94,7 +98,10 @@ class PlantProvidor extends Component {
       });
   };
   getplantinfo = link => {
-    const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
+
+         const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
+
+
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/${link}?token=${TREFLE_API}`
