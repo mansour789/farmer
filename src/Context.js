@@ -36,7 +36,7 @@ class PlantProvidor extends Component {
       .then(data => {
         console.log(data);
         this.setState({
-          remaining: data[0].usage_info.used_week - 20
+          remaining: data[0].usage_info.used_week 
         })
         setTimeout(() => {
           fetch("https://api.plant.id/check_identifications", {
@@ -93,6 +93,7 @@ class PlantProvidor extends Component {
       });
   };
   getplantinfo = link => {
+    const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/${link}?token=${TREFLE_API}`
