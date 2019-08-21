@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 class Rightside extends Component {
   static contextType = PlantContext;
   render() {
-    const { data, image, loading } = this.context;
+    const { data, image, loading, remaining } = this.context;
     //  console.log(data)
     // console.log(data.plant.name,);
     //  console.log(data.plant.name)
@@ -30,7 +30,7 @@ class Rightside extends Component {
         <div className="center">
       <div className="row ">
         <div className="col s12 m7 ">
-            
+          {remaining ?   <h5> {20 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
           <div className="card z-depth-5">
             <div className="card-image">
               <img src={`${getData.images[0].url}`} alt='pictuer' />
