@@ -18,7 +18,7 @@ function App() {
   // console.log(M)
   return (
 
-  <Router> 
+  <HashRouter> 
 
    
      <div className="b"> 
@@ -33,7 +33,7 @@ function App() {
       </div> 
 
 
-  </Router>
+  </HashRouter>
 
 
  
