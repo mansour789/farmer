@@ -14,6 +14,7 @@ class PlantProvidor extends Component {
   }
 
   plantId = srcData => {
+    const PLANT_API = process.env.REACT_APP_PLANT_API_KEY;
     this.setState({
       loading: true
     });
@@ -78,9 +79,10 @@ class PlantProvidor extends Component {
   };
   //More Info from Trefle API
   moreInfo = name => {
+     const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://trefle.io/api/plants?token=K3BrMzlPVk1lS0FsM0oxKzlEMUtnZz09&q=${name}`
+        `https://cors-anywhere.herokuapp.com/https://trefle.io/api/plants?token=${TREFLE_API}&q=${name}`
       )
       .then(res => {
         console.log(res.data[0].link);
@@ -93,7 +95,7 @@ class PlantProvidor extends Component {
   getplantinfo = link => {
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/${link}?token=K3BrMzlPVk1lS0FsM0oxKzlEMUtnZz09`
+        `https://cors-anywhere.herokuapp.com/${link}?token=${TREFLE_API}`
       )
       .then(res => {
         console.log(res.data);
