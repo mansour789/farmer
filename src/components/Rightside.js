@@ -10,7 +10,6 @@ class Rightside extends Component {
     const { data, image, loading, remaining } = this.context;
     //  console.log(data)
     // console.log(data.plant.name,);
-    //  console.log(data.plant.name)
     //   console.log(data.plant.url)
     //   console.log(image)
     // console.log(loading)
@@ -33,20 +32,20 @@ class Rightside extends Component {
           {remaining ?   <h5> {20 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
           <div className="card z-depth-5">
             <div className="card-image">
-              <img src={`${getData.images[0].url}`} alt='pictuer' />
+              <img src={image} alt='pictuer' />
 
             </div>
-            <span className="card-title">{getData.suggestions[0].plant.name}</span>
+            <span className="card-title">{data.plant.name}</span>
             <div className="card-content">
               <p>
-                The Image is {getData.suggestions[0].plant.name} with confidence
-                of {`${getData.suggestions[0].confidence.toFixed(2)} %`}.
+                The Image is {data.plant.name} with confidence
+                of {`${(data.confidence * 100).toFixed(2) } %`}.
               </p>
             </div>
             <div className="card-action">
-              {getData.suggestions[0].plant.url ? (
+              {data.plant.url ? (
                 <a
-                  href={`${getData.suggestions[0].plant.url}`}
+                  href={`${data.plant.url}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
