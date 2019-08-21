@@ -29,8 +29,11 @@ class Rightside extends Component {
         <div className="center">
       <div className="row ">
         <div className="col s12 m7 ">
+
+
           {remaining ?   <h5> {20 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
           <div className="card z-depth-5">
+
             <div className="card-image">
               <img src={image} alt='pictuer' />
 

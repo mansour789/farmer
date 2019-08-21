@@ -94,7 +94,10 @@ class PlantProvidor extends Component {
       });
   };
   getplantinfo = link => {
-    const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
+
+         const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;
+
+
     axios
       .get(
         `https://cors-anywhere.herokuapp.com/${link}?token=${TREFLE_API}`
