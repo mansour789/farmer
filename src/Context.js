@@ -23,7 +23,7 @@ class PlantProvidor extends Component {
       'usage_info': true,
       'images': [srcData]
     };
-
+     // we used fetch to customize the header 
     fetch("https://api.plant.id/identify", {
       method: "POST",
       headers: {
@@ -36,8 +36,12 @@ class PlantProvidor extends Component {
       .then(data => {
         console.log(data);
         this.setState({
+
+           // to clalc how many requists lift the key
           remaining: data.usage_info.used_week 
+
         })
+         //we hade to set time between until the response of image prossecing
         setTimeout(() => {
           fetch("https://api.plant.id/check_identifications", {
             method: "POST",
