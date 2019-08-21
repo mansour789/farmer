@@ -30,8 +30,7 @@ class Rightside extends Component {
         <div className="center">
       <div className="row ">
         <div className="col s12 m7 ">
-            
-          <div className="card z-depth-5">
+        <div className="card z-depth-5">
             <div className="card-image">
               <img src={`${getData.images[0].url}`} alt='pictuer' />
 
