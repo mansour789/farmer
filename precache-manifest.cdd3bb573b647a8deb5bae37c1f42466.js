@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "122a0a6ffe5ea42288f739174e254b20",
+    "revision": "392cf6766f466e93b64936eb68aaf59c",
     "url": "/farmer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/farmer/static/css/2.ad9eb4b5.chunk.css"
   },
   {
-    "revision": "8a74bd9a49b314c8cb22",
+    "revision": "3721c8d1f4a2883c1913",
     "url": "/farmer/static/css/main.f009983f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/farmer/static/js/2.3438dd51.chunk.js"
   },
   {
-    "revision": "8a74bd9a49b314c8cb22",
-    "url": "/farmer/static/js/main.ea62261b.chunk.js"
+    "revision": "3721c8d1f4a2883c1913",
+    "url": "/farmer/static/js/main.a6af7587.chunk.js"
   },
   {
     "revision": "f717622e7241a61ee1d2",
