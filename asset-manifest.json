@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/farmer/static/css/main.f009983f.chunk.css",
-    "main.js": "/farmer/static/js/main.7c19ac2f.chunk.js",
-    "main.js.map": "/farmer/static/js/main.7c19ac2f.chunk.js.map",
+    "main.js": "/farmer/static/js/main.ea62261b.chunk.js",
+    "main.js.map": "/farmer/static/js/main.ea62261b.chunk.js.map",
     "runtime~main.js": "/farmer/static/js/runtime~main.c44a7206.js",
     "runtime~main.js.map": "/farmer/static/js/runtime~main.c44a7206.js.map",
     "static/css/2.ad9eb4b5.chunk.css": "/farmer/static/css/2.ad9eb4b5.chunk.css",
     "static/js/2.3438dd51.chunk.js": "/farmer/static/js/2.3438dd51.chunk.js",
     "static/js/2.3438dd51.chunk.js.map": "/farmer/static/js/2.3438dd51.chunk.js.map",
     "index.html": "/farmer/index.html",
-    "precache-manifest.e7d30789cafff488902df4cfae20c023.js": "/farmer/precache-manifest.e7d30789cafff488902df4cfae20c023.js",
+    "precache-manifest.2e21dc71300442dc3f77192b223e97af.js": "/farmer/precache-manifest.2e21dc71300442dc3f77192b223e97af.js",
     "service-worker.js": "/farmer/service-worker.js",
     "static/css/2.ad9eb4b5.chunk.css.map": "/farmer/static/css/2.ad9eb4b5.chunk.css.map",
     "static/css/main.f009983f.chunk.css.map": "/farmer/static/css/main.f009983f.chunk.css.map"
