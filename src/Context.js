@@ -20,7 +20,7 @@ class PlantProvidor extends Component {
     });
     var body = {
 
-      //  'key': PLANT_API,
+       'key': PLANT_API,
       'usage_info': true,
       'images': [srcData]
     };
@@ -51,7 +51,7 @@ class PlantProvidor extends Component {
               Accept: "application/json"
             },
             body: JSON.stringify({
-              // 'key': PLANT_API,
+              'key': PLANT_API,
               'ids': [parseInt(data.id)]
             })
           })

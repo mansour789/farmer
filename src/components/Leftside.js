@@ -21,7 +21,7 @@ class Leftside extends Component {
    render(){
    
     return(
-    <div>
+    
       <div className="row ">
           
         <div className="col s12 m8 "> 
@@ -37,7 +37,7 @@ class Leftside extends Component {
           <button className="wbtn tooltipped waves-effect waves-light btn modal-trigger green lighten-4 black-text" onClick={this.props.startProccess}>Upload</button>
         </div>
       </div> 
-    </div> 
+    
     );
     } 
 
