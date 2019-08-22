@@ -9,11 +9,30 @@ class PlantProvidor extends Component {
       data: {},
       image: "",
       loading: false,
-      remaining: 0
+      remaining: 0,
+      limitOut: ""
     };
   }
 
   plantId = srcData => {
+
+    fetch("https://api.plant.id/usage_info", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: JSON.stringify({
+              'key': 'uIAfQNkeEafSl721A9GvkgsbxqWj5X5uw5l4L0PAPn49nNZrHk',
+             
+            })
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log("2nd", data.used_week)
+              if (data.used_week < 20){
+                
+    ///////
     const PLANT_API = process.env.REACT_APP_PLANT_API_KEY;
     this.setState({
       loading: true
@@ -62,8 +81,6 @@ class PlantProvidor extends Component {
               console.log(" image", data[0].images[0].url);
               this.setState({
                 data: data[0].suggestions[0],
-
-
                 image: data[0].images[0].url_tiny,
                 loading:false
 
@@ -85,7 +102,23 @@ class PlantProvidor extends Component {
         });
         console.log(error);
       });
-  };
+
+    }else{
+      console.log("no limit")
+      this.setState({
+        loading: false,
+        limitOut: "Sorry We Are Out Of Requests, Please Try Again After A Week"
+      })
+    }
+
+  })
+    .catch(err => {
+      this.setState({
+        loading: false
+      });
+      console.log(err);
+    });
+  }
   //More Info from Trefle API
   moreInfo = name => {
      const TREFLE_API = process.env.REACT_APP_TREFLE_API_KEY;

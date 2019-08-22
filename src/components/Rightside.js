@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 class Rightside extends Component {
   static contextType = PlantContext;
   render() {
-    const { data, image, loading, remaining } = this.context;
+    const { data, image, loading, remaining, limitOut } = this.context;
     //  console.log(data)
     // console.log(data.plant.name,);
     //   console.log(data.plant.url)
@@ -23,6 +23,8 @@ class Rightside extends Component {
     return (
 
 
+      <>
+      {limitOut ? <h1 className="text-white">{limitOut}</h1> :
       <>
       {loading ? <Loading /> : <>
 
@@ -65,6 +67,7 @@ class Rightside extends Component {
 
 
 
+      </>}
       </>}
       </>
 
