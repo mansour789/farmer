@@ -26,8 +26,7 @@ class PlantProvidor extends Component {
               Accept: "application/json"
             },
             body: JSON.stringify({
-              'key': 'uIAfQNkeEafSl721A9GvkgsbxqWj5X5uw5l4L0PAPn49nNZrHk',
-             
+              'key': 'uIAfQNkeEafSl721A9GvkgsbxqWj5X5uw5l4L0PAPn49nNZrHk'
             })
           })
             .then(response => response.json())
