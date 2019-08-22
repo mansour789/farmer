@@ -20,7 +20,7 @@ class PlantProvidor extends Component {
     });
     var body = {
 
-       'key': PLANT_API,
+       'key': 'urCgrUEmyK1Im8cHhPmrJ0yEVYHPu41ZSF3cBehb2iaBd1FdAW',
       'usage_info': true,
       'images': [srcData]
     };
@@ -51,7 +51,7 @@ class PlantProvidor extends Component {
               Accept: "application/json"
             },
             body: JSON.stringify({
-              'key': PLANT_API,
+              'key': 'urCgrUEmyK1Im8cHhPmrJ0yEVYHPu41ZSF3cBehb2iaBd1FdAW',
               'ids': [parseInt(data.id)]
             })
           })
