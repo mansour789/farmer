@@ -24,9 +24,10 @@ class Rightside extends Component {
 
 
       <>
-      {limitOut ? <h1 className="text-white">{limitOut}</h1> :
+      {loading ? <Loading /> :
       <>
-      {loading ? <Loading /> : <>
+      {limitOut ? <h1 className="text-white">{limitOut}</h1> :
+       <>
 
         <div className="center">
       <div className="row ">
