@@ -15,6 +15,9 @@ class PlantProvidor extends Component {
   }
 
   plantId = srcData => {
+    this.setState({
+      loading: true
+    });
 
     fetch("https://api.plant.id/usage_info", {
             method: "POST",
@@ -34,9 +37,7 @@ class PlantProvidor extends Component {
                 
     ///////
     const PLANT_API = process.env.REACT_APP_PLANT_API_KEY;
-    this.setState({
-      loading: true
-    });
+    
     var body = {
 
        'key': 'urCgrUEmyK1Im8cHhPmrJ0yEVYHPu41ZSF3cBehb2iaBd1FdAW',
