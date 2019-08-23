@@ -34,7 +34,7 @@ class Rightside extends Component {
         <div className="col s12 m7 ">
 
 
-          {remaining ?   <h5> {20 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
+          {remaining ?   <h5> {59 - remaining } trills left</h5> : <h5> Sorry We rnu out of requests</h5> }
           <div className="card medium z-depth-5">
             <div className="card-image">
               <img src={image} alt='pictuer' />
@@ -46,18 +46,27 @@ class Rightside extends Component {
                 </p>
             <div className="card-action">
               {data.plant.url ? (
+                
                 <a
                   href={`${data.plant.url}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+
                   Click here more info on Wikipidia
                 </a>
+
+
               ) : null}
               <br/>{" "}
-              <a><Link to="/google">
+             
+              <a>
+                
+                <Link to="/google">
            Find The Nearest Plant Store
-         </Link></a>
+         </Link>
+         
+         </a>
             </div>
           </div>
 

@@ -102,7 +102,7 @@ class Google extends React.PureComponent {
 
   searchPlace = () => {
     axios
-      .get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=24.718279,46.7465153&radius=15000&type=plant%20store&keyword=plant%20store&key=AIzaSyABFrz6SP5jsrNTc6Dt_yYq6whKCwMOo9g`
+      .get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.currentLatLng.lat},${this.state.currentLatLng.lng}&radius=15000&type=plant%20store&keyword=plant%20store&key=AIzaSyABFrz6SP5jsrNTc6Dt_yYq6whKCwMOo9g`
 
       )
       .then(res => {

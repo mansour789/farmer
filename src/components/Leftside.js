@@ -12,14 +12,29 @@ class Leftside extends Component {
                     const fileReader = new FileReader();
                     fileReader.onload =  (fileLoadedEvent) => {
                         let srcData = fileLoadedEvent.target.result; // <--- data: base64
-                            this.context.plantId(srcData); //<-- calling plantId function from Context.js file
-                    }
+                          if (this.context.lessUse < 20){
+                            this.context.plantId(this.context.key, srcData); //<-- calling plantId function from Context.js file
+                          }else{
+                            this.context.sorry()
+                          }
+                          }
                     fileReader.readAsDataURL(fileToLoad);
                 }
           }
+
+          checkempty = () => {
+            const filesSelected = document.getElementById("inputFileToLoad").files;
+            if (filesSelected.length > 0) {
+                 this.props.startProccess()
+          }else{
+                 alert("Please choose a picture before upload");
+          }
+        }
     
    render(){
-   
+  console.log('The used week: ',this.context.lessUse);
+  console.log("The key is: ", this.context.key);
+  console.log("remaining :", this.context.remaining);
     return(
     
       <div className="row ">
@@ -34,7 +49,7 @@ class Leftside extends Component {
               <li>Additional links will be provided too.</li>
           </ol>
           <input id="inputFileToLoad" type="file" onChange={this.encodeImageFileAsURL} />
-          <button className="wbtn tooltipped waves-effect waves-light btn modal-trigger green lighten-4 black-text" onClick={this.props.startProccess}>Upload</button>
+          <button className="wbtn tooltipped waves-effect waves-light btn modal-trigger green lighten-4 black-text" onClick={this.checkempty}>Upload</button>
         </div>
       </div> 
     
