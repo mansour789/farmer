@@ -12,6 +12,7 @@ function AboutUs() {
             <h5 className="header col s12 light">
               Our mission is to make every kind of plants knowing by everyone.
             </h5>
+            <p>Mansour : mansouralmohsen2018@gmail.com</p>
           </div>
 
         </div>
