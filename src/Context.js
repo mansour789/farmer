@@ -34,7 +34,7 @@ class PlantProvidor extends Component {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data);
+        // console.log(data);
 
         //we hade to set time between until the response of image prossecing
         setTimeout(() => {
@@ -51,9 +51,9 @@ class PlantProvidor extends Component {
           })
             .then(response => response.json())
             .then(data => {
-              console.log("2nd", data);
-              console.log("whole suggestion ", data[0].suggestions[0]);
-              console.log(" image", data[0].images[0].url);
+              // console.log("2nd", data);
+              // console.log("whole suggestion ", data[0].suggestions[0]);
+              // console.log(" image", data[0].images[0].url);
               this.setState({
                 data: data[0].suggestions[0],
                 image: data[0].images[0].url_tiny,
@@ -103,7 +103,7 @@ class PlantProvidor extends Component {
       })
         .then(response => response.json())
         .then(data => {
-          console.log("2nd", data.used_week);
+          // console.log("2nd", data.used_week);
 
           this.setState({
             // to clalc how many requists lift the key
@@ -133,7 +133,7 @@ class PlantProvidor extends Component {
     });
 
     this.gitData(key, srcData)
-    console.log("calling data", key);
+    // console.log("calling data", key);
   };
 
   sorry = () => {

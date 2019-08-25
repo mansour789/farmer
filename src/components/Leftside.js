@@ -32,9 +32,9 @@ class Leftside extends Component {
         }
     
    render(){
-  console.log('The used week: ',this.context.lessUse);
-  console.log("The key is: ", this.context.key);
-  console.log("remaining :", this.context.remaining);
+  // console.log('The used week: ',this.context.lessUse);
+  // console.log("The key is: ", this.context.key);
+  // console.log("remaining :", this.context.remaining);
     return(
     
       <div className="row ">

@@ -16,7 +16,8 @@ const MyMapComponent = compose(
   withProps({
     //Creat a mape
     googleMapURL:
-    `https://maps.googleapis.com/maps/api/js?key=AIzaSyABFrz6SP5jsrNTc6Dt_yYq6whKCwMOo9g&v=3.exp&libraries=geometry,drawing,places`,
+    
+    `https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100%` }} />,
     mapElement: <div style={{ height: `100%` }} />
@@ -97,17 +98,17 @@ class Google extends React.PureComponent {
   componentDidMount() {
     this.delayedShowMarker();
     this.showCurrentLocation();
-    this.searchPlace();
+    // this.searchPlace();
   }
 
   searchPlace = () => {
     axios
-      .get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.currentLatLng.lat},${this.state.currentLatLng.lng}&radius=15000&type=plant%20store&keyword=plant%20store&key=AIzaSyABFrz6SP5jsrNTc6Dt_yYq6whKCwMOo9g`
+      .get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${this.state.currentLatLng.lat},${this.state.currentLatLng.lng}&radius=15000&type=plant%20store&keyword=plant%20store`
 
       )
       .then(res => {
         // console.log(res)
-        console.log(res.data.results);
+        // console.log(res.data.results);
         this.setState({
           places: res.data.results
         });
@@ -147,7 +148,8 @@ class Google extends React.PureComponent {
 
   render() {
     return (
-        <div className="center"><br/><br/><br/>
+        <div className="center"><br/>
+        <h5>This map will show the nearest plant store to you, after deploy the final version.</h5>
             <div className="row">
                 <div className="col s6 offset-s3">
       <div style={{ width: "50vw", height: "50vh", opacity: 0.90 }} >

@@ -11,7 +11,7 @@ class Footer extends Component{
       <p className="copyright">© 2019 Copyright</p>
       <p className="message">Created with &hearts; by <span className="name">The 4 GEEKS</span></p>
 
-         <div className="chip white black-text right mkf ">Fallah +966509111136</div>
+         <div className="chip white black-text right mkf ">Fallah </div>
 
     </footer>
            
